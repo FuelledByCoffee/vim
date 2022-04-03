@@ -73,8 +73,6 @@ set smartindent
 set smarttab
 set scrolloff=7
 set sidescrolloff=5
-set nobackup
-set nowritebackup
 set undolevels=100    " How many undos
 set undoreload=1000   " number of lines to save for undo
 set undofile          " Save undos after file closes
