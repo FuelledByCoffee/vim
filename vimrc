@@ -79,7 +79,7 @@ set undofile          " Save undos after file closes
 set wildmenu
 set wildignorecase    " case is ignored when completing file names and directories
 set shortmess+=c      " Silence insert completion messages
-set completeopt=menu,menuone,noselect,preview
+set completeopt=menu,menuone,noselect
 set omnifunc=syntaxcomplete#Complete
 
 filetype plugin on
