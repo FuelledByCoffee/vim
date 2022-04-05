@@ -53,6 +53,7 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 syntax on
 
+set background=dark
 set mouse=a
 set number
 set autoread
