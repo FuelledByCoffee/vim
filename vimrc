@@ -109,10 +109,10 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 
 " Show syntax highlighting groups for word under cursor
 function! <SID>SynStack()
-    if !exists("*synstack")
-        return
-    endif
-    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 nmap <F2> :call <SID>SynStack()<CR>
 
@@ -129,9 +129,11 @@ function! IsTriggerChar()
 endfunction
 
 function! OpenCompletion()
-    if !pumvisible() && IsTriggerChar()
-        call feedkeys("\<C-x>\<C-o>", "n")
-    endif
+  if !pumvisible() && IsTriggerChar()
+    call feedkeys("\<C-x>\<C-o>", "n")
+  elseif !pumvisible() && v:char == '/'
+    call feedkeys("\<C-x>\<C-f>", "n")
+  endif
 endfunction
 autocmd InsertCharPre * call OpenCompletion()
 
