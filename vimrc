@@ -59,6 +59,7 @@ set fillchars+=fold:\ "
 set mouse=a
 set number
 set splitright
+set splitbelow
 set autoread
 set hidden
 set nobackup
