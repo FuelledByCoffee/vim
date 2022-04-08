@@ -53,6 +53,7 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
 syntax on
+colorscheme mini
 
 set fillchars+=vert:\ "
 set fillchars+=eob:\  "
@@ -92,8 +93,6 @@ filetype plugin on
 filetype indent on
 
 autocmd FileType help wincmd L
-
-colorscheme mini
 
 " jump to previous position when reopening a file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
