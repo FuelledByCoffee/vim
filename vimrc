@@ -89,20 +89,8 @@ set omnifunc=syntaxcomplete#Complete
 filetype plugin on
 filetype indent on
 
-" hi Special      ctermfg=yellow
-hi Comment            ctermfg=Grey
-hi LineNr             ctermfg=Grey
-hi Statement          ctermfg=DarkYellow
-hi Folded             ctermfg=Black
-hi Folded             ctermbg=DarkGrey
-hi Pmenu              ctermbg=DarkGrey
+autocmd FileType help wincmd L
 
-hi VimOption          ctermfg=DarkCyan
-hi VimHiCtermcolor    ctermfg=DarkCyan
-hi VimMapMod          ctermfg=DarkGrey
-hi VimMapModKey       ctermfg=DarkBlue
-hi VimNotation        ctermfg=DarkBlue
-hi VimBracket         ctermfg=DarkGrey
 
 " jump to previous position when reopening a file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
