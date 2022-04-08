@@ -53,7 +53,9 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 syntax on
 
-set background=dark
+set fillchars+=vert:\
+set fillchars+=eob:\
+set fillchars+=fold:\
 set mouse=a
 set number
 set splitright
