@@ -115,9 +115,13 @@ function! TrimWhitespace()
 endfun
 nnoremap <leader><space> :call TrimWhitespace()<cr>
 
+
 function! IsTriggerChar()
-  return (v:char >= 'a' && v:char <= 'z') || (v:char >= 'A' && v:char <= 'Z') || (v:char == '.')
+  return (v:char >= 'a' && v:char <= 'z')
+      || (v:char >= 'A' && v:char <= 'Z')
+      || (v:char == '.')
 endfunction
+
 
 function! OpenCompletion()
   if !pumvisible() && IsTriggerChar()
