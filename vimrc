@@ -91,6 +91,7 @@ filetype indent on
 
 autocmd FileType help wincmd L
 
+colorscheme mini
 
 " jump to previous position when reopening a file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
