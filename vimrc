@@ -56,6 +56,7 @@ syntax on
 set background=dark
 set mouse=a
 set number
+set splitright
 set autoread
 set hidden
 set nobackup
