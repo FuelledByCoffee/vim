@@ -55,9 +55,7 @@ inoremap {;<CR> {<CR>};<ESC>O
 syntax on
 colorscheme mini
 
-set fillchars+=vert:\ "
-set fillchars+=eob:\  "
-set fillchars+=fold:\ "
+set fillchars=vert:\ ,eob:\ ,fold:\ "
 set mouse=a
 set number
 set splitright
