@@ -89,7 +89,7 @@ set omnifunc=syntaxcomplete#Complete
 filetype plugin on
 filetype indent on
 
-autocmd FileType help    wincmd L
+autocmd FileType help wincmd L
 
 " jump to previous position when reopening a file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
