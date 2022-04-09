@@ -128,5 +128,5 @@ function! OpenCompletion()
     call feedkeys("\<C-x>\<C-f>", "n")
   endif
 endfunction
-autocmd InsertCharPre * call OpenCompletion()
+" autocmd InsertCharPre * call OpenCompletion()
 
