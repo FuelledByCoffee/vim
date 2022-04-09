@@ -1,5 +1,7 @@
+
 let mapleader = ','
-let g:c_syntax_for_h=1
+let g:c_syntax_for_h = 1
+let g:c_autodoc = 1
 let @/ = "" " Don't highlight after source vimrc
 
 inoremap jj <esc>
@@ -26,7 +28,6 @@ inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "<cr>"
 
 nnoremap <silent>ø zA
 
-nnoremap <silent> // :noh<cr>
 nnoremap <silent><leader>\| <C-W>L
 
 " Move between splits
