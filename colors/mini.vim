@@ -1,11 +1,11 @@
 set background=dark
 
-" hi Special      ctermfg=yellow
+hi Special            ctermfg=Red
 hi Comment            ctermfg=Grey
 hi Statement          ctermfg=DarkYellow
 hi Type               ctermfg=DarkBlue
 hi Function           ctermfg=LightBlue
-hi String             ctermfg=Green
+hi String             ctermfg=DarkCyan
 hi Constant           ctermfg=DarkRed
 hi Paren              ctermfg=DarkRed
 
@@ -15,9 +15,9 @@ hi Pmenu              ctermbg=DarkGrey
 hi signcolumn         ctermbg=None
 
 " Lines between splits
-hi vertsplit          ctermfg=DarkGrey
-hi statuslinenc       ctermfg=DarkGrey
-hi statusline         ctermfg=DarkGrey
+hi vertsplit          ctermfg=black ctermbg=white
+hi statusline         ctermfg=black ctermbg=white
+hi statuslinenc       ctermfg=black ctermbg=None
 
 hi statuslineterm     ctermbg=DarkGrey ctermfg=black
 hi statuslinetermnc   ctermbg=DarkGrey ctermfg=black
