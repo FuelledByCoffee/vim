@@ -1,5 +1,7 @@
 
-hi VimOption          ctermfg=DarkCyan
+hi VimVar             ctermfg=lightblue
+hi VimFunction        ctermfg=74
+hi VimOption          ctermfg=darkblue
 hi VimHiCtermcolor    ctermfg=DarkCyan
 hi VimMapMod          ctermfg=DarkGrey
 hi VimMapModKey       ctermfg=DarkBlue
