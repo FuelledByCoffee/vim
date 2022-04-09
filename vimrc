@@ -57,7 +57,8 @@ colorscheme mini
 
 set fillchars=vert:\ ,eob:\ ,fold:\ "
 set mouse=a
-set number
+set nonumber
+set signcolumn=yes
 set splitright
 set splitbelow
 set autoread
