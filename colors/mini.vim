@@ -9,6 +9,7 @@ hi Type               ctermfg=DarkBlue
 hi Function           ctermfg=LightBlue
 hi String             ctermfg=214
 hi Constant           ctermfg=112
+hi Identifier         ctermfg=Darkblue
 hi Paren              ctermfg=DarkRed
 hi PreProc            ctermfg=DarkMagenta
 hi Operator           ctermfg=Yellow
