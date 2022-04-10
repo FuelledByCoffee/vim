@@ -1,7 +1,6 @@
 
 let mapleader = ','
 let g:c_syntax_for_h = 1
-let g:c_autodoc = 1
 let @/ = "" " Don't highlight after source vimrc
 
 inoremap jj <esc>
@@ -83,7 +82,7 @@ set sidescrolloff=5
 set undolevels=100    " How many undos
 set undoreload=1000   " number of lines to save for undo
 set undofile          " Save undos after file closes
-set undodir=$HOME/.vim/undo
+set undodir=$HOME/.undo-vim
 set wildmenu
 set wildignorecase    " case is ignored when completing file names and directories
 set shortmess+=c      " Silence insert completion messages
@@ -118,19 +117,16 @@ endfun
 nnoremap <leader><space> :call TrimWhitespace()<cr>
 
 
-function! IsTriggerChar()
-  return (v:char >= 'a' && v:char <= 'z')
-      || (v:char >= 'A' && v:char <= 'Z')
-      || (v:char == '.')
-endfunction
-
-
-function! OpenCompletion()
-  if !pumvisible() && IsTriggerChar()
-    call feedkeys("\<C-x>\<C-o>", "n")
-  elseif !pumvisible() && v:char == '/'
-    call feedkeys("\<C-x>\<C-f>", "n")
+function! CleverTab()
+  if pumvisible()
+    return "\<C-N>"
+  endif
+  if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+    return "\<Tab>"
+  elseif exists('&omnifunc') && &omnifunc != ''
+    return "\<C-X>\<C-O>"
+  else
+    return "\<C-N>"
   endif
 endfunction
-" autocmd InsertCharPre * call OpenCompletion()
-
+inoremap <expr><Tab> CleverTab()
