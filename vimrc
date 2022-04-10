@@ -57,6 +57,7 @@ colorscheme mini
 
 set fillchars=vert:\ ,eob:\ ,fold:\ "
 set mouse=a
+set modelines=6
 set nonumber
 set signcolumn=yes
 set splitright
@@ -82,6 +83,7 @@ set sidescrolloff=5
 set undolevels=100    " How many undos
 set undoreload=1000   " number of lines to save for undo
 set undofile          " Save undos after file closes
+set undodir=$HOME/.vim/undo
 set wildmenu
 set wildignorecase    " case is ignored when completing file names and directories
 set shortmess+=c      " Silence insert completion messages
