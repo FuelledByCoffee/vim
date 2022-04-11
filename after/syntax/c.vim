@@ -41,7 +41,6 @@ hi! def link cDefine     cPreProc
 hi! def link cInclude    cPreProc
 hi! def link cCppBracket Paren
 hi! def link cCppSkip    Paren
-hi! def link cCppBadBlock Paren
 
 " hi def link cFormat     Type
 hi! cSpecial             ctermfg=Blue
