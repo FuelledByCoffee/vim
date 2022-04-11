@@ -1,26 +1,27 @@
 set background=dark
 
 " Syntax
-hi Variable           ctermfg=lightblue
+hi Variable           ctermfg=Cyan
 hi Special            ctermfg=Red
 hi Comment            ctermfg=Grey
 hi Statement          ctermfg=DarkYellow
 hi Type               ctermfg=DarkBlue
 hi Function           ctermfg=LightBlue
-hi String             ctermfg=214
-hi Constant           ctermfg=112
-hi Identifier         ctermfg=Darkblue
+hi String             ctermfg=DarkGreen
+hi Constant           ctermfg=DarkGreen
+hi Identifier         ctermfg=DarkBlue
 hi Paren              ctermfg=DarkRed
 hi PreProc            ctermfg=DarkMagenta
-hi Operator           ctermfg=Yellow
-hi MatchParen         ctermfg=None       ctermbg=blue cterm=None
+hi Operator           ctermfg=DarkYellow
+hi MatchParen         ctermfg=None        ctermbg=DarkBlue    cterm=None
+hi Todo               ctermfg=DarkMagenta ctermbg=None
 
 " Vim UI
-hi LineNr             ctermfg=Grey       ctermbg=None
-hi CursorLineNr       ctermfg=White      ctermbg=None cterm=None
-hi Folded             ctermfg=Black      ctermbg=DarkGrey
-hi Pmenu              ctermfg=white      ctermbg=236
-hi pmenusel           ctermfg=black      ctermbg=blue
+hi LineNr             ctermfg=Grey     ctermbg=None
+hi CursorLineNr       ctermfg=White    ctermbg=None cterm=None
+hi Folded             ctermfg=Black    ctermbg=DarkGrey
+hi Pmenu              ctermfg=white    ctermbg=236
+hi pmenusel           ctermfg=black    ctermbg=blue
 hi signcolumn         ctermbg=None
 hi CursorLine         cterm=None
 
