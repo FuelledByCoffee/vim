@@ -15,6 +15,7 @@ hi PreProc            ctermfg=DarkMagenta
 hi Operator           ctermfg=DarkYellow
 hi MatchParen         ctermfg=None        ctermbg=DarkBlue    cterm=None
 hi Todo               ctermfg=DarkMagenta ctermbg=None
+hi Title              ctermfg=DarkMagenta
 
 " Vim UI
 hi LineNr             ctermfg=Grey     ctermbg=None
