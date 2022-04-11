@@ -13,13 +13,14 @@ hi Identifier         ctermfg=Darkblue
 hi Paren              ctermfg=DarkRed
 hi PreProc            ctermfg=DarkMagenta
 hi Operator           ctermfg=Yellow
-hi MatchParen         ctermfg=None ctermbg=blue cterm=None
+hi MatchParen         ctermfg=None       ctermbg=blue cterm=None
 
 " Vim UI
 hi LineNr             ctermfg=Grey       ctermbg=None
 hi CursorLineNr       ctermfg=White      ctermbg=None cterm=None
 hi Folded             ctermfg=Black      ctermbg=DarkGrey
-hi Pmenu              ctermbg=DarkGrey
+hi Pmenu              ctermfg=white      ctermbg=236
+hi pmenusel           ctermfg=black      ctermbg=blue
 hi signcolumn         ctermbg=None
 hi CursorLine         cterm=None
 
