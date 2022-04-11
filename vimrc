@@ -102,8 +102,8 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 
 " Show syntax highlighting groups for word under cursor
 command! CheckHighlightUnderCursor echo {l,c,n ->
-      \   'hi:'    . synIDattr(synID(l, c, 1), n)             . ' -> '
-      \  .'trans:' . synIDattr(synID(l, c, 0), n)             . ' -> '
+      \   'hi:'    . synIDattr(synID(l, c, 1), n) . ' -> '
+      \  .'trans:' . synIDattr(synID(l, c, 0), n) . ' -> '
       \  .'lo:'    . synIDattr(synIDtrans(synID(l, c, 1)), n)
       \ }(line("."), col("."), "name")
 nmap <F2> <cmd>CheckHighlightUnderCursor<cr>
