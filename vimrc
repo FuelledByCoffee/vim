@@ -2,6 +2,7 @@
 let mapleader = ','
 let g:c_syntax_for_h = 1
 let @/ = "" " Don't highlight after source vimrc
+let $MANPAGER=''
 
 inoremap jj <esc>
 
