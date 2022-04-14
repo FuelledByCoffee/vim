@@ -30,10 +30,8 @@ exe "syn match cOperator display '" . cOperatorList . "'"
 
 syn match cOperator display ';'
 
-hi! def link cOperator   Operator
-hi! def link cCustomFunc Function
-hi! def link Ops         Operator
 hi! def link Braces      Paren
+hi! def link cCustomFunc Function
 hi! def link cOperator   Operator
 hi! def link cformat     cSpecial
 hi! def link cDefine     cPreProc
