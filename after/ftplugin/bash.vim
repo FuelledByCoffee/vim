@@ -1,4 +1,4 @@
-setlocal makeprg=shellcheck\ -f\ gcc\ %
+setlocal makeprg=shellcheck\ -f\ gcc\ --shell=bash\ %\ -a
 
 setlocal expandtab
 setlocal shiftwidth=2
