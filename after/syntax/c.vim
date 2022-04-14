@@ -42,7 +42,7 @@ hi! def link cCppBracket Paren
 hi! def link cCppSkip    Paren
 
 " hi def link cFormat     Type
-hi! cSpecial             ctermfg=Blue
+hi! cSpecial             ctermfg=DarkCyan
 hi! cBracket             ctermfg=DarkGray
 hi! cBlock               ctermbg=DarkGray
 hi! cOctal               ctermfg=Red
