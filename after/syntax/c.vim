@@ -2,7 +2,6 @@
 " Highlight all function names
 syntax match cCustomFunc /\w\+\s*(/me=e-1,he=e-1
 syntax match Braces display '[{}()\[\]]'
-" syntax match Ops    display '[,\+\-\*=\!;%\^\<\>&\.]'
 
 let cOperatorList  = '[-&|+<>=*/!~]'    " A list of symbols that we don't want to immediately precede the operator
 let cOperatorList .= '\@<!'             " Negative look-behind (check that the preceding symbols aren't there)
