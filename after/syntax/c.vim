@@ -19,7 +19,7 @@ let cOperatorList .= '\|'               " Next option:
 let cOperatorList .=     '[*?,!~%.]'     " Some simple single character operators
 let cOperatorList .= '\|'               " Next option:
 let cOperatorList .=     '\('           " One of the shift characters:
-let cOperatorList .=         '[<>]'     
+let cOperatorList .=         '[<>]'
 let cOperatorList .=     '\)'
 let cOperatorList .=     '\2'           " Followed by another identical character, so << or >>...
 let cOperatorList .=     '='            " Followed by =, so <<= or >>=.
