@@ -46,5 +46,5 @@ hi! def link cCppSkip    Paren
 hi! cSpecial             ctermfg=Blue
 hi! cBracket             ctermfg=DarkGray
 hi! cBlock               ctermbg=DarkGray
-hi! cOctal               ctermbg=Red
+hi! cOctal               ctermfg=Red
 
