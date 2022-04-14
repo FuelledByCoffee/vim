@@ -30,8 +30,8 @@ let cOperatorList .= '\@!'              " Negative look-ahead (this and the \@<!
 exe "syn match cOperator display '" . cOperatorList . "'"
 
 syn match cOperator display ';'
-hi link cOperator Operator
 
+hi! def link cOperator   Operator
 hi! def link cCustomFunc Function
 hi! def link Ops         Operator
 hi! def link Braces      Paren
