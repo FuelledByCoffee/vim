@@ -32,3 +32,8 @@ hi statusline         ctermfg=DarkGrey ctermbg=Black
 hi statuslinenc       ctermfg=DarkGrey ctermbg=Black
 hi statuslineterm     ctermbg=DarkGrey ctermfg=black
 hi statuslinetermnc   ctermbg=DarkGrey ctermfg=black
+
+" Git
+hi def diffRemoved    ctermfg=1
+hi def diffAdded      ctermfg=2
+
