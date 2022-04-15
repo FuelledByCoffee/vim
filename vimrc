@@ -84,6 +84,7 @@ set undolevels=100    " How many undos
 set undoreload=1000   " number of lines to save for undo
 set undofile          " Save undos after file closes
 set undodir=$HOME/.undo-vim
+set rtp+=$FZF_DIR
 set wildmenu
 set wildignorecase    " case is ignored when completing file names and directories
 set shortmess+=c      " Silence insert completion messages

@@ -4,3 +4,6 @@
 [submodule "pack/git-plugins/start/gitgutter"]
 	path = pack/git-plugins/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/fuzzy/start/fzf.vim"]
+	path = pack/fuzzy/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
