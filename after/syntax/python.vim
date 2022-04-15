@@ -16,7 +16,7 @@ let pyOperatorList .= '\|'               " Next option:
 let pyOperatorList .=     '\('           " One of the shift characters:
 let pyOperatorList .=         '[<>]'
 let pyOperatorList .=     '\)'
-let pyOperatorList .=     '\2'           " Followed by another identical character, so << or >>...
+let pyOperatorList .=     '\2\?'         " Optionally followed by another identical character, so << or >>...
 let pyOperatorList .=     '='            " Followed by =, so <<= or >>=.
 let pyOperatorList .= '\)'               " End of the long list of options
 let pyOperatorList .= '[-+/*&|^~<>=!]'   " The list of symbols that we don't want to follow
