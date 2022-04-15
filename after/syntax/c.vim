@@ -20,7 +20,7 @@ let cOperatorList .= '\|'               " Next option:
 let cOperatorList .=     '\('           " One of the shift characters:
 let cOperatorList .=         '[<>]'
 let cOperatorList .=     '\)'
-let cOperatorList .=     '\2'           " Followed by another identical character, so << or >>...
+let cOperatorList .=     '\2\?'         " Optionally followed by another identical character, so << or >>...
 let cOperatorList .=     '='            " Followed by =, so <<= or >>=.
 let cOperatorList .= '\)'               " End of the long list of options
 let cOperatorList .= '[-+/*&|^~<>=!]'   " The list of symbols that we don't want to follow
