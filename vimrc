@@ -122,8 +122,7 @@ nnoremap <leader><space> :call TrimWhitespace()<cr>
 function! CleverTab()
   if pumvisible()
     return "\<C-N>"
-  endif
-  if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+  elseif strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
     return "\<Tab>"
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
