@@ -16,7 +16,7 @@ let g:fzf_action = {
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 
-let g:fzf_preview_window = ['right:50%', 'ctrl-/']
+let g:fzf_preview_window = ['right:50%', 'ctrl-l']
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
