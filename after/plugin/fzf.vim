@@ -32,6 +32,7 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 nmap <space>f <cmd>Files<cr>
 nmap <space>b <cmd>Buffers<cr>
 nmap <space>g <cmd>Rg<cr>
+nmap <space>G <cmd>GFiles?<cr>
 nmap <space>H <cmd>Helptags<cr>
 nmap <space>h <cmd>History<cr>
 nmap <space>c <cmd>Commits<cr>
