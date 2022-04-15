@@ -1,7 +1,7 @@
 set background=dark
 
 " Syntax
-hi Variable           ctermfg=Cyan
+hi Variable           ctermfg=DarkBlue cterm=bold
 hi Special            ctermfg=Red
 hi Comment            ctermfg=Grey
 hi Statement          ctermfg=DarkYellow
