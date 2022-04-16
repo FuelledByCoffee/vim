@@ -2,7 +2,10 @@
 let mapleader = ','
 let g:c_syntax_for_h = 1
 let @/ = "" " Don't highlight after source vimrc
-let $MANPAGER=''
+let $MANPAGER='vim
+      \ -c "%!col -b"
+      \ -c "set ft=man nomod"
+      \ -'
 
 inoremap jj <esc>
 
