@@ -1,15 +1,12 @@
 [submodule "pack/git-plugins/start/fugitive"]
 	path = pack/git-plugins/start/fugitive
 	url = https://github.com/tpope/vim-fugitive
-  ignore = dirty
   branch = master
 [submodule "pack/git-plugins/start/gitgutter"]
 	path = pack/git-plugins/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-  ignore = dirty
   branch = master
 [submodule "pack/fuzzy/start/fzf.vim"]
 	path = pack/fuzzy/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
-  ignore = dirty
   branch = master
