@@ -5,7 +5,7 @@ syntax match zshBraces      display '[{}]'
 
 syntax match flag ' --\?\w\+'
 syntax match path display '/\@<=\.\?\(\w*\|\\ *\)*'
-syntax match path display '\~'
+syntax match path display '\(\~\)/\@='
 
 hi! def link zshParenthesis     Paren
 hi! def link zshBrackets        Paren
