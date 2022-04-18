@@ -3,7 +3,7 @@ syntax match zshBrackets    display '[\[\]]'
 syntax match zshParenthesis display '[()]'
 syntax match zshBraces      display '[{}]'
 
-syntax match flag ' --\?\w\+'
+syntax match flag ' --\?\S\+'
 syntax match path display '/\@<=\.\?\(\w*\|\\ *\)*'
 syntax match path display '\(\~\)/\@='
 
