@@ -50,7 +50,7 @@ nnoremap <leader>p "*p
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-nnoremap <leader>cf <cmd>!clang-format -i %<cr><cr>
+nnoremap ƒ <cmd>!clang-format -i %<cr><cr>
 
 syntax on
 colorscheme mini
