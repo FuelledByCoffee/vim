@@ -2,7 +2,7 @@
 let mapleader = ','
 let g:c_syntax_for_h = 1
 let @/ = "" " Don't highlight after source vimrc
-let $MANPAGER='vim --not-a-term -M +MANPAGER -'
+let $MANPAGER="/bin/bash -c \"col -b -x | vim -R --not-a-term -c 'set ft=man' - \""
 
 inoremap jj <esc>
 
@@ -128,7 +128,7 @@ function! CleverTab()
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
   else
-    return "\<C-N>"
+    return "\<C-I>"
   endif
 endfunction
 inoremap <expr><Tab> CleverTab()
