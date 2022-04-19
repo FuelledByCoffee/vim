@@ -57,6 +57,7 @@ colorscheme mini
 
 set fillchars=vert:\ ,eob:\ ,fold:\ "
 set mouse=a
+set backspace=indent,eol,start
 set modelines=6
 set nonumber
 set signcolumn=yes
