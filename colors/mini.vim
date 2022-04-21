@@ -15,7 +15,7 @@ hi PreProc            ctermfg=DarkMagenta
 hi Operator           ctermfg=DarkYellow
 hi MatchParen         ctermfg=None        ctermbg=DarkBlue    cterm=None
 hi Todo               ctermfg=DarkMagenta ctermbg=None
-hi Title              ctermfg=DarkMagenta
+hi Title              ctermfg=Green
 
 " Vim UI
 hi LineNr             ctermfg=Grey     ctermbg=None
@@ -34,6 +34,10 @@ hi statuslineterm     ctermbg=DarkGrey ctermfg=black
 hi statuslinetermnc   ctermbg=DarkGrey ctermfg=black
 
 " Git
-hi def diffRemoved    ctermfg=1
-hi def diffAdded      ctermfg=2
+hi diffRemoved            ctermfg=1
+hi diffAdded              ctermfg=2
+hi diffOldFile            ctermfg=1
+hi diffNewFile            ctermfg=2
+hi gitcommitSelectedFile  ctermfg=3
+hi gitcommitDiscardedFile ctermfg=6
 
