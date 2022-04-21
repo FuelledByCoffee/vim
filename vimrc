@@ -89,7 +89,7 @@ set undodir=$HOME/.undo-vim
 set rtp+=$FZF_DIR
 set wildmenu
 set wildignorecase    " case is ignored when completing file names and directories
-set shortmess=aoOtTc
+set shortmess+=c
 set completeopt=menu,menuone,noselect
 set omnifunc=syntaxcomplete#Complete
 
