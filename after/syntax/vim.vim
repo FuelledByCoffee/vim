@@ -9,3 +9,4 @@ hi VimBracket         ctermfg=DarkGrey
 
 hi! def link VimFtOption  Constant
 hi! def link VimOption    Constant
+hi! def link VimVar       Variable
