@@ -8,3 +8,4 @@ nnoremap <leader>gP <cmd>Git push<CR>
 nnoremap         g- <cmd>Git stash<CR>:e<CR>
 nnoremap         g+ <cmd>Git stash pop<CR>:e<CR>
 
+set statusline=%<%f\ %h%m%r%{FugitiveHead()}%=%-14.(%l,%c%V%)\ %P
