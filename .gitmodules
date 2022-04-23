@@ -10,3 +10,6 @@
 	path = pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
   branch = master
+[submodule "pack/plugins/opt/easy-align"]
+	path = pack/plugins/opt/easy-align
+	url = https://github.com/junegunn/vim-easy-align
