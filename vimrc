@@ -59,7 +59,7 @@ set fillchars=vert:\ ,eob:\ ,fold:\ "
 set mouse=a
 set backspace=indent,eol,start
 set modelines=6
-set updatetime=500
+set updatetime=100
 set nonumber
 set signcolumn=yes
 set splitright
