@@ -34,10 +34,13 @@ hi statuslineterm     ctermbg=DarkGrey ctermfg=black
 hi statuslinetermnc   ctermbg=DarkGrey ctermfg=black
 
 " Git
-hi diffRemoved            ctermfg=1
-hi diffAdded              ctermfg=2
-hi diffOldFile            ctermfg=1
-hi diffNewFile            ctermfg=2
-hi gitcommitSelectedFile  ctermfg=3
-hi gitcommitDiscardedFile ctermfg=6
+hi DiffAdd                ctermfg=2 ctermbg=None
+hi DiffChange             ctermfg=3 ctermbg=None
+hi DiffDelete             ctermfg=1 ctermbg=None
+hi diffAdded              ctermfg=2 ctermbg=None
+hi diffRemoved            ctermfg=1 ctermbg=None
+hi diffNewFile            ctermfg=2 ctermbg=None
+hi diffOldFile            ctermfg=1 ctermbg=None
+hi gitcommitSelectedFile  ctermfg=3 ctermbg=None
+hi gitcommitDiscardedFile ctermfg=6 ctermbg=None
 
