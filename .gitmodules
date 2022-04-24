@@ -1,0 +1,15 @@
+[submodule "git-gutter"]
+	path = pack/plugins/start/git-gutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "fugitive"]
+	path = pack/plugins/start/fugitive
+	url = https://github.com/tpope/vim-fugitive
+	branch = master
+[submodule "easy-align"]
+	path = pack/plugins/start/easy-align
+	url = https://github.com/junegunn/vim-easy-align
+	branch = master
+[submodule "fzf.vim"]
+	path = pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+	branch = master
