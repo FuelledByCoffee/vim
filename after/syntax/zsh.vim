@@ -18,7 +18,9 @@ let zshOperatorList .=     '->'           " Pointer dereference operator
 let zshOperatorList .= '\|'               " Next option:
 let zshOperatorList .=     '[-+*/%&|^!]=' " One of the listed symbols followed by an =, e.g. +=, -=, &= etc
 let zshOperatorList .= '\|'               " Next option:
-let zshOperatorList .=     '[*?,!~%.^]'   " Some simple single character operators
+let zshOperatorList .=     '[*?,!~%^]'    " Some simple single character operators
+let zshOperatorList .= '\|'               " Next option:
+let zshOperatorList .=     '\.\s'         " Dot operator
 let zshOperatorList .= '\|'               " Next option:
 let zshOperatorList .=     '\('           " One of the shift characters:
 let zshOperatorList .=         '[<>]'
