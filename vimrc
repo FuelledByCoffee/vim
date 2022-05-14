@@ -60,13 +60,13 @@ set fillchars=vert:\ ,eob:\ ,fold:\ "
 set mouse=a
 set backspace=indent,eol,start
 set modelines=6
-set updatetime=100
-set nonumber
-set signcolumn=yes
+set updatetime=100  " Decrease update time
+set nonumber        " Clean no number
+set signcolumn=yes  " For git signs
 set splitright
 set splitbelow
 set autoread
-set hidden
+set hidden          " Modify buffers not in view
 set nobackup
 set nowritebackup
 set hlsearch
@@ -83,13 +83,13 @@ set smartindent
 set smarttab
 set scrolloff=7
 set sidescrolloff=5
-set undolevels=100    " How many undos
-set undoreload=1000   " number of lines to save for undo
-set undofile          " Save undos after file closes
+set undolevels=100  " How many undos
+set undoreload=1000 " number of lines to save for undo
+set undofile        " Save undos after file closes
 set undodir=$HOME/.undo-vim
 set rtp+=$FZF_DIR
 set wildmenu
-set wildignorecase    " case is ignored when completing file names and directories
+set wildignorecase  " case is ignored when completing file names and directories
 set shortmess+=c
 set completeopt=menu,menuone,noselect
 set omnifunc=syntaxcomplete#Complete
