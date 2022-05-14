@@ -131,7 +131,7 @@ function! CleverTab()
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
   else
-    return "\<C-I>"
+    return "\<C-N>"
   endif
 endfunction
 inoremap <expr><Tab> CleverTab()
