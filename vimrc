@@ -25,8 +25,6 @@ inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "<cr>"
 
 nnoremap <silent>ø zA
 
-nnoremap <silent><leader>\| <C-W>L
-
 " Move between splits
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
@@ -46,6 +44,9 @@ nnoremap <silent>cc <cmd>cclose<CR>
 
 nnoremap <leader>y "*y
 nnoremap <leader>p "*p
+
+xnoremap <leader>y "*y
+xnoremap <leader>p "*p
 
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
