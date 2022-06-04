@@ -31,8 +31,13 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
 
+" Move lines up/down
 nnoremap <silent> √ <cmd>move+<CR>
 nnoremap <silent> ª <cmd>move-2<CR>
+
+" Move visual block
+xnoremap √ :m '>+1<CR>gv=gv
+xnoremap ª :m '<-2<CR>gv=gv
 
 nnoremap <silent> // <cmd>noh<cr>
 
