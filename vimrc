@@ -61,7 +61,6 @@ au FileType c,cpp,json nnoremap <leader>f <cmd>!clang-format -i %<cr><cr>
 syntax on
 colorscheme mini
 
-set fillchars=vert:\ ,eob:\ ,fold:\ "
 set mouse=a
 set backspace=indent,eol,start
 set modelines=6
