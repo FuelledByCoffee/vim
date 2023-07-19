@@ -63,10 +63,12 @@ colorscheme mini
 
 set mouse=a
 set backspace=indent,eol,start
+set nowrap
 set modelines=6
 set updatetime=100  " Decrease update time
 set nonumber        " Clean no number
 set signcolumn=yes  " For git signs
+set cursorline
 set splitright
 set splitbelow
 set autoread
