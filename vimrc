@@ -101,6 +101,7 @@ set completeopt=menu,menuone,noselect
 set complete+=kspell
 set omnifunc=syntaxcomplete#Complete
 
+filetype on
 filetype plugin on
 filetype indent on
 
