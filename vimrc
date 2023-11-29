@@ -98,7 +98,7 @@ set wildmenu
 set wildignorecase  " case is ignored when completing file names and directories
 set shortmess+=c
 set completeopt=menu,menuone,noselect
-set complete+=kspell
+set complete+=kspell "add files in spell/ to dictionaries
 set omnifunc=syntaxcomplete#Complete
 
 filetype on
