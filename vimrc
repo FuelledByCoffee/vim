@@ -72,7 +72,7 @@ set signcolumn=yes  " For git signs
 set cursorline
 set splitright
 set splitbelow
-set autoread
+set autoread        " Auto-refresh when file has changed
 set hidden          " Modify buffers not in view
 set nobackup
 set nowritebackup
