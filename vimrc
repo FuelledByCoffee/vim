@@ -40,13 +40,12 @@ nnoremap <silent> ª <cmd>move-2<CR>
 xnoremap √ :m '>+1<CR>gv=gv
 xnoremap ª :m '<-2<CR>gv=gv
 
-nnoremap <silent> // <cmd>noh<cr>
+nnoremap <silent> <esc> <cmd>noh<cr>
 
 " Navigate through quick-fix errors
 nnoremap <C-N> <cmd>cn<CR>
 nnoremap <C-P> <cmd>cp<CR>
 nnoremap <silent>co <cmd>copen<CR>
-nnoremap <silent>cc <cmd>cclose<CR>
 
 nnoremap <leader>y "*y
 nnoremap <leader>p "*p
@@ -67,8 +66,9 @@ set backspace=indent,eol,start
 set nowrap
 set modelines=6
 set updatetime=100  " Decrease update time
-set nonumber        " Clean no number
+set number
 set signcolumn=yes  " For git signs
+set ruler           " Show line and column in status
 set cursorline
 set splitright
 set splitbelow
@@ -81,9 +81,8 @@ set incsearch
 set foldlevel=0
 set foldmethod=marker
 set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+set shiftwidth=0
+set noexpandtab
 set ignorecase
 set smartcase
 set smartindent
