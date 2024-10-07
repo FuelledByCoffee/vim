@@ -1,6 +1,7 @@
 [submodule "git-gutter"]
 	path = pack/plugins/start/git-gutter
 	url = https://github.com/airblade/vim-gitgutter
+	branch = main
 [submodule "fugitive"]
 	path = pack/plugins/start/fugitive
 	url = https://github.com/tpope/vim-fugitive
