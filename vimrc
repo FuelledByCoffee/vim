@@ -107,8 +107,8 @@ filetype indent on
 
 autocmd FileType help wincmd L
 
-" jump to previous position when reopening a file last-postion-jump
-" restore-cursor
+" restore-cursor last-postion-jump
+" Ignore git commit, rebase and xxd
 augroup RestoreCursor
   autocmd!
   autocmd BufReadPre * autocmd FileType <buffer> ++once
