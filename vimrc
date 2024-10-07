@@ -107,11 +107,17 @@ filetype indent on
 
 autocmd FileType help wincmd L
 
-" jump to previous position when reopening a file
-au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-      \| exe "normal! g'\""
-      \| endif
-
+" jump to previous position when reopening a file last-postion-jump
+" restore-cursor
+augroup RestoreCursor
+  autocmd!
+  autocmd BufReadPre * autocmd FileType <buffer> ++once
+    \ let s:line = line("'\"")
+    \ | if s:line >= 1 && s:line <= line("$") && &filetype !~# 'commit'
+    \      && index(['xxd', 'gitrebase'], &filetype) == -1
+    \ |   execute "normal! g`\""
+    \ | endif
+augroup END
 
 " Show syntax highlighting groups for word under cursor
 command! CheckHighlightUnderCursor echo {l,c,n ->
