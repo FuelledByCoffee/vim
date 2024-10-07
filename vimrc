@@ -20,7 +20,7 @@ nnoremap <silent><s-tab>  <cmd>bNext<cr>
 xnoremap <tab>   >gv
 xnoremap <S-tab> <gv
 
-inoremap <expr> <tab>   pumvisible() ? "\<C-n>" : "<tab>"
+" inoremap <expr> <tab>   pumvisible() ? "\<C-n>" : "<tab>"
 inoremap <expr> <S-tab> pumvisible() ? "\<C-p>" : "<S-tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "<cr>"
 
@@ -127,7 +127,6 @@ command! CheckHighlightUnderCursor echo {l,c,n ->
       \ }(line("."), col("."), "name")
 nmap <F2> <cmd>CheckHighlightUnderCursor<cr>
 
-
 function! TrimWhitespace()
   let l:save = winsaveview()
   keeppatterns %s/\s\+$//e
@@ -141,8 +140,8 @@ function! CleverTab()
     return "\<C-N>"
   elseif strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
     return "\<Tab>"
-  elseif exists('&omnifunc') && &omnifunc != ''
-    return "\<C-X>\<C-O>"
+"  elseif exists('&omnifunc') && &omnifunc != ''
+"    return "\<C-X>\<C-O>"
   else
     return "\<C-N>"
   endif
