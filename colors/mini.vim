@@ -20,11 +20,11 @@ hi Title      ctermfg=Green
 " Vim UI
 hi LineNr       ctermfg=Grey  ctermbg=None
 hi CursorLineNr ctermfg=White ctermbg=None cterm=None
+hi CursorLine                 ctermbg=8    cterm=None
 hi Folded       ctermfg=Black ctermbg=DarkGrey
 hi Pmenu        ctermfg=white ctermbg=8
 hi pmenusel     ctermfg=black ctermbg=blue
-hi signcolumn   ctermbg=None
-hi CursorLine   cterm=None
+hi signcolumn                 ctermbg=None
 
 " Lines between splits
 hi vertsplit        ctermfg=DarkGrey ctermbg=Black
