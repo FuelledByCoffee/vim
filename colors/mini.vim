@@ -1,4 +1,5 @@
 set background=dark
+set notermguicolors
 
 " Syntax
 hi Variable   ctermfg=DarkBlue    cterm=bold
@@ -9,11 +10,11 @@ hi Type       ctermfg=DarkBlue
 hi Function   ctermfg=Blue
 hi String     ctermfg=DarkGreen
 hi Constant   ctermfg=DarkGreen
-hi Identifier ctermfg=DarkBlue
+hi Identifier ctermfg=Magenta
 hi Paren      ctermfg=DarkRed
 hi PreProc    ctermfg=DarkMagenta
 hi Operator   ctermfg=DarkYellow
-hi MatchParen ctermfg=None        ctermbg=DarkBlue cterm=None
+hi MatchParen ctermfg=None        ctermbg=None cterm=Underline
 hi Todo       ctermfg=DarkMagenta ctermbg=None
 hi Title      ctermfg=Green
 
