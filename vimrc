@@ -40,7 +40,7 @@ nnoremap <silent> ª <cmd>move-2<CR>
 xnoremap √ :m '>+1<CR>gv=gv
 xnoremap ª :m '<-2<CR>gv=gv
 
-nnoremap <silent> <esc> <cmd>noh<cr>
+nnoremap <silent> // <cmd>noh<cr>
 
 " Navigate through quick-fix errors
 nnoremap <C-N> <cmd>cn<CR>
@@ -140,8 +140,8 @@ function! CleverTab()
     return "\<C-N>"
   elseif strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
     return "\<Tab>"
-"  elseif exists('&omnifunc') && &omnifunc != ''
-"    return "\<C-X>\<C-O>"
+  elseif exists('&omnifunc') && &omnifunc != ''
+    return "\<C-X>\<C-O>"
   else
     return "\<C-N>"
   endif
