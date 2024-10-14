@@ -100,6 +100,7 @@ set shortmess+=c
 set completeopt=menu,menuone " ,noselect
 set complete+=kspell "add files in spell/ to dictionaries
 set omnifunc=syntaxcomplete#Complete
+set nrformats=bin,octal,hex,unsigned
 
 filetype on
 filetype plugin on
