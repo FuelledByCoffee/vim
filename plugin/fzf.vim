@@ -15,9 +15,9 @@ let g:fzf_action = {
 let g:fzf_preview_window = ['right:50%', 'ctrl-l']
 
 " Mapping selecting mappings
-nmap <leader><tab> <plug>(fzf-maps-n)
-xmap <leader><tab> <plug>(fzf-maps-x)
-omap <leader><tab> <plug>(fzf-maps-o)
+nmap <leader>sk <plug>(fzf-maps-n)
+xmap <leader>sk <plug>(fzf-maps-x)
+omap <leader>sk <plug>(fzf-maps-o)
 
 " Insert mode completion
 " imap <c-x><c-k> <plug>(fzf-complete-word)
@@ -25,11 +25,11 @@ omap <leader><tab> <plug>(fzf-maps-o)
 " imap <c-x><c-l> <plug>(fzf-complete-line)
 
 " Shortcuts
-nmap <space>f <cmd>Files<cr>
-nmap <space>b <cmd>Buffers<cr>
-nmap <space>g <cmd>Rg<cr>
-nmap <space>G <cmd>GFiles?<cr>
-nmap <space>H <cmd>Helptags<cr>
-nmap <space>h <cmd>History<cr>
-nmap <space>c <cmd>Commits<cr>
-nmap <space>C <cmd>Commands<cr>
+nmap <leader>sf <cmd>Files<cr>
+nmap <leader>sb <cmd>Buffers<cr>
+nmap <leader>sg <cmd>Rg<cr>
+nmap <leader>sG <cmd>GFiles?<cr>
+nmap <leader>sH <cmd>Helptags<cr>
+nmap <leader>sh <cmd>History<cr>
+nmap <leader>sc <cmd>Commits<cr>
+nmap <leader>sC <cmd>Commands<cr>
