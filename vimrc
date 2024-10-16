@@ -42,11 +42,6 @@ xnoremap ª :m '<-2<CR>gv=gv
 
 nnoremap <silent> // <cmd>noh<cr>
 
-" Navigate through quick-fix errors
-nnoremap <C-N> <cmd>cn<CR>
-nnoremap <C-P> <cmd>cp<CR>
-nnoremap <silent>co <cmd>copen<CR>
-
 nnoremap <leader>y "*y
 nnoremap <leader>p "*p
 
