@@ -27,6 +27,11 @@ hi Pmenu        ctermfg=white ctermbg=8
 hi pmenusel     ctermfg=black ctermbg=blue
 hi signcolumn                 ctermbg=None
 
+" QuickFix
+hi quickFixLine ctermbg=none
+hi qfFileName   ctermfg=DarkGreen
+hi qfLineNr     ctermfg=DarkBlue
+
 " Lines between splits
 hi vertsplit        ctermfg=DarkGrey ctermbg=Black
 hi statusline       ctermfg=DarkGrey ctermbg=Black
