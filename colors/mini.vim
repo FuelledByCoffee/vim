@@ -2,11 +2,11 @@ set background=dark
 set notermguicolors
 
 " Syntax
-hi Variable   ctermfg=DarkBlue    cterm=bold
+hi Variable   ctermfg=DarkBlue
 hi Special    ctermfg=Red
 hi Comment    ctermfg=Grey
 hi Statement  ctermfg=DarkYellow
-hi Type       ctermfg=DarkBlue
+hi Type       ctermfg=DarkYellow
 hi Function   ctermfg=Blue
 hi String     ctermfg=DarkGreen
 hi Constant   ctermfg=DarkGreen
