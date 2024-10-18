@@ -13,31 +13,36 @@ let cOperatorList .=     '\1\?'         " Followed by (optionally) the exact sam
 let cOperatorList .= '\|'               " Next option:
 let cOperatorList .=     '->'           " Pointer dereference operator
 let cOperatorList .= '\|'               " Next option:
-let cOperatorList .=     '[-+*/%&|^!]=' " One of the listed symbols followed by an =, e.g. +=, -=, &= etc
+let cOperatorList .=     '::'           " Namespace
+let cOperatorList .= '\|'               " Next option:
+let cOperatorList .=     '[-+*/%&|^!]=\?' " One of the listed symbols followed by an =, e.g. +=, -=, &= etc
 let cOperatorList .= '\|'               " Next option:
 let cOperatorList .=     '[*?,!~%.^]'   " Some simple single character operators
 let cOperatorList .= '\|'               " Next option:
 let cOperatorList .=     '\('           " One of the shift characters:
 let cOperatorList .=         '[<>]'
 let cOperatorList .=     '\)'
-let cOperatorList .=     '\2\?'         " Optionally followed by another identical character, so << or >>...
+let cOperatorList .=     '\2'           " Followed by another identical character, so << or >>...
 let cOperatorList .=     '='            " Followed by =, so <<= or >>=.
 let cOperatorList .= '\)'               " End of the long list of options
-let cOperatorList .= '[-+/*&|^~<>=!]'   " The list of symbols that we don't want to follow
+let cOperatorList .= '[-+/*&|^~<>=:!]'  " The list of symbols that we don't want to follow
 let cOperatorList .= '\@!'              " Negative look-ahead (this and the \@<! prevent === etc from matching)
-
 exe "syn match cOperator display '" . cOperatorList . "'"
+
+" let cppNameSpace = '[a-zA-Z0-9_-]*\(::\)\@='
+" exe "syn match cppNameSpace display '" . cppNameSpace . "'"
 
 syn match cOperator display ';'
 
-hi! def link Braces      Paren
-hi! def link cCustomFunc Function
-hi! def link cOperator   Operator
-hi! def link cformat     cSpecial
-hi! def link cDefine     cPreProc
-hi! def link cInclude    cPreProc
-hi! def link cCppBracket Paren
-hi! def link cCppSkip    Paren
+hi! def link cppNameSpace  Constant
+hi! def link Braces        Paren
+hi! def link cCustomFunc   Function
+hi! def link cOperator     Operator
+hi! def link cformat       cSpecial
+hi! def link cDefine       cPreProc
+hi! def link cInclude      cPreProc
+hi! def link cCppBracket   Paren
+hi! def link cCppSkip      Paren
 
 " hi def link cFormat     Type
 hi! cSpecial             ctermfg=DarkCyan
