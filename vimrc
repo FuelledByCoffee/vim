@@ -32,7 +32,7 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
 
-" Move lines up/down
+" Move lines up/down -- nordic mac symbols for alt j/k
 nnoremap <silent> √ <cmd>move+<CR>
 nnoremap <silent> ª <cmd>move-2<CR>
 
@@ -95,7 +95,7 @@ set shortmess+=c
 set completeopt=menu,menuone " ,noselect
 set complete+=kspell "add files in spell/ to dictionaries
 set omnifunc=syntaxcomplete#Complete
-set nrformats=bin,octal,hex,unsigned
+set nrformats=bin,octal,hex,unsigned " Ignore leading - when inc/dec numbers
 
 filetype on
 filetype plugin on
