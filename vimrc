@@ -14,8 +14,8 @@ nnoremap <leader>Q <cmd>qa<cr>
 nnoremap <leader>m <cmd>make<cr>
 nnoremap <leader>t <cmd>term<cr>
 
-nnoremap <silent><tab>    <cmd>bnext<cr>
-nnoremap <silent><s-tab>  <cmd>bNext<cr>
+nnoremap <silent>gb <cmd>bnext<cr>
+nnoremap <silent>gB <cmd>bNext<cr>
 
 xnoremap <tab>   >gv
 xnoremap <S-tab> <gv
