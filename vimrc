@@ -20,10 +20,6 @@ nnoremap <silent>gB <cmd>bNext<cr>
 xnoremap <tab>   >gv
 xnoremap <S-tab> <gv
 
-" inoremap <expr> <tab>   pumvisible() ? "\<C-n>" : "<tab>"
-inoremap <expr> <S-tab> pumvisible() ? "\<C-p>" : "<S-tab>"
-inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "<cr>"
-
 nnoremap <silent>ø zA
 
 " Move between splits
@@ -130,16 +126,22 @@ function! TrimWhitespace()
 endfun
 nnoremap <leader><space> :call TrimWhitespace()<cr>
 
+function! CompleteTab()
+  let line   = getline('.') " Current line
+  let substr = strpart(line, -1, col('.')) 
+  let substr = matchstr(substr, "[^\s]*$")
 
-function! CleverTab()
-  if pumvisible()
-    return "\<C-N>"
-  elseif strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+  if strlen(substr) == 0
     return "\<Tab>"
+  elseif match(substr, '\/') != -1 " Current string has slash, so path
+    return "\<C-X>\<C-F>"
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
   else
     return "\<C-N>"
   endif
 endfunction
-inoremap <expr><Tab> CleverTab()
+
+inoremap <expr><Tab>   pumvisible() ? "\<C-N>" : CompleteTab()
+inoremap <expr><S-Tab> pumvisible() ? "\<C-P>" : "<S-Tab>"
+inoremap <expr><CR>    pumvisible() ? "\<C-Y>" : "<CR>"
