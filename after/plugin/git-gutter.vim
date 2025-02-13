@@ -14,7 +14,7 @@ let g:gitgutter_sign_modified_removed        = '~-'
 
 command! Gqf GitGutterQuickFix | copen
 
-nnoremap <leader>G  <cmd>Gqf<cr>
+nnoremap qg         <cmd>Gqf<cr>
 nnoremap <leader>ga <cmd>GitGutterStageHunk<cr>
 nnoremap <leader>gu <cmd>GitGutterUndoHunk<cr>
 nnoremap         gp <cmd>GitGutterPreviewHunk<cr>
