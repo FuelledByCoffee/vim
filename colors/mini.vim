@@ -11,7 +11,7 @@ hi Function   ctermfg=Blue
 hi String     ctermfg=DarkGreen
 hi Constant   ctermfg=DarkGreen
 hi Identifier ctermfg=Magenta
-hi Paren      ctermfg=DarkRed
+hi Paren      ctermfg=109
 hi PreProc    ctermfg=DarkMagenta
 hi Operator   ctermfg=DarkYellow
 hi MatchParen ctermfg=None        ctermbg=None cterm=Underline
