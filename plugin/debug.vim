@@ -12,16 +12,25 @@ hi debugPC ctermbg=darkgray ctermfg=none cterm=none
 nnoremap <F5>      <cmd>Termdebug<cr>
 nnoremap <leader>b <cmd>Break<cr>
 
-augroup start_debug
-	au!
-	au User TermdebugStartPost nnoremap <F5>  <cmd>Continue<cr>
-	au User TermdebugStartPost nnoremap <F9>  <cmd>Step<cr>
-	au User TermdebugStartPost nnoremap <F10> <cmd>Over<cr>
-	au User TermdebugStartPost nnoremap <F11> <cmd>Finish<cr>
-augroup END
+function! Begin_debug()
+	nnoremap <F5>  <cmd>Continue<cr>
+	nnoremap <F9>  <cmd>Step<cr>
+	nnoremap <F10> <cmd>Over<cr>
+	nnoremap <F11> <cmd>Finish<cr>
 
-augroup end_debug
+	nnoremap b <cmd>Break<cr>
+	nnoremap c <cmd>Clear<cr>
+endfunction
+
+function! End_debug()
+	nnoremap <F5> <cmd>Termdebug<cr>
+	nunmap b
+	nunmap c
+endfunction
+
+augroup debug_overrides
 	au!
-	au User TermdebugStopPost nnoremap <F5>  <cmd>Termdebug<cr>
+	au User TermdebugStartPost call Begin_debug()
+	au User TermdebugStopPost  call End_debug()
 augroup END
 
