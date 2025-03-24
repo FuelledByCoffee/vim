@@ -50,3 +50,5 @@ hi diffOldFile            ctermfg=1 ctermbg=None
 hi gitcommitSelectedFile  ctermfg=3 ctermbg=None
 hi gitcommitDiscardedFile ctermfg=6 ctermbg=None
 
+hi! def link gitconfigVariable variable
+
