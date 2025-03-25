@@ -12,7 +12,8 @@ nnoremap <leader>q <cmd>q<cr>
 nnoremap <leader>d <cmd>bd<cr>
 nnoremap <leader>Q <cmd>qa<cr>
 nnoremap <leader>m <cmd>make<cr>
-nnoremap <leader>t <cmd>term<cr>
+nnoremap <leader>T <cmd>term<cr>
+nnoremap <leader>tw <cmd>set wrap!<cr>
 
 nnoremap <silent>gb <cmd>bnext<cr>
 nnoremap <silent>gB <cmd>bNext<cr>
