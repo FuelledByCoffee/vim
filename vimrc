@@ -56,6 +56,7 @@ colorscheme mini
 set mouse=a
 set backspace=indent,eol,start
 set nowrap
+set modeline
 set modelines=6
 set updatetime=100  " Decrease update time
 set number
