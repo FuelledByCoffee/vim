@@ -58,15 +58,15 @@ set backspace=indent,eol,start
 set nowrap
 set modeline
 set modelines=6
-set updatetime=100  " Decrease update time
+set updatetime=100 " Decrease update time
 set number
-set signcolumn=yes  " For git signs
-set ruler           " Show line and column in status
+set signcolumn=yes " For git signs
+set ruler          " Show line and column in status
 set cursorline
 set splitright
 set splitbelow
-set autoread        " Auto-refresh when file has changed
-set hidden          " Modify buffers not in view
+set autoread       " Auto-refresh when file has changed
+set hidden         " Modify buffers not in view
 set nobackup
 set nowritebackup
 set hlsearch
@@ -88,12 +88,13 @@ set undofile        " Save undos after file closes
 set undodir=$HOME/.undo-vim
 set rtp+=$FZF_DIR
 set wildmenu
-set wildignorecase  " case is ignored when completing file names and directories
+set wildignorecase                   " case is ignored when completing file names and directories
 set shortmess+=c
 set completeopt=menu,menuone,noselect
-set complete+=kspell "add files in spell/ to dictionaries
+set complete+=kspell                 "add files in spell/ to dictionaries
 set omnifunc=syntaxcomplete#Complete
 set nrformats=bin,octal,hex,unsigned " Ignore leading - when inc/dec numbers
+set t_u7=                            " Don't start in replace mode on windows under wsl
 
 filetype on
 filetype plugin on
