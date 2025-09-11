@@ -139,6 +139,7 @@ endfunction
 
 inoremap <expr>) Is_char(')') ? "\<right>" : ")"
 inoremap <expr>] Is_char(']') ? "\<right>" : ")"
+inoremap <expr>} Is_char('}') ? "\<right>" : ")"
 
 function! CompleteTab()
   let line   = getline('.') " Current line
