@@ -45,6 +45,9 @@ nnoremap <leader>p "*p
 xnoremap <leader>y "*y
 xnoremap <leader>p "*p
 
+inoremap ( ()<left>
+inoremap [ []<left>
+
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
@@ -128,6 +131,14 @@ function! TrimWhitespace()
   call winrestview(l:save)
 endfun
 nnoremap <leader><space> :call TrimWhitespace()<cr>
+
+function! Is_char(match)
+	let current_char = getline('.')[col('.') - 1]
+	return a:match == current_char
+endfunction
+
+inoremap <expr>) Is_char(')') ? "\<right>" : ")"
+inoremap <expr>] Is_char(']') ? "\<right>" : ")"
 
 function! CompleteTab()
   let line   = getline('.') " Current line
