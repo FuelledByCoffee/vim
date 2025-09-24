@@ -34,19 +34,17 @@ exe "syn match cOperator display '" . cOperatorList . "'"
 
 syn match cOperator display ';'
 
-hi! def link cppNameSpace  Constant
-hi! def link Braces        Paren
-hi! def link cCustomFunc   Function
-hi! def link cOperator     Operator
-hi! def link cformat       cSpecial
-hi! def link cDefine       cPreProc
-hi! def link cInclude      cPreProc
-hi! def link cCppBracket   Paren
-hi! def link cCppSkip      Paren
-
-" hi def link cFormat     Type
-hi! cSpecial             ctermfg=DarkCyan
-hi! cBracket             ctermfg=DarkGray
-hi! cBlock               ctermbg=DarkGray
-hi! cOctal               ctermfg=Red
+hi! def link cppNameSpace Constant
+hi! def link Braces       Paren
+hi! def link cCustomFunc  Function
+hi! def link cOperator    Operator
+hi! def link cformat      cSpecial
+hi! def link cDefine      cPreProc
+hi! def link cInclude     cPreProc
+hi! def link cCppBracket  Paren
+hi! def link cCppSkip     Paren
+hi! def link cSpecial     Special
+hi! def link cBracket     Bracket
+hi! def link cBlock       Block
+hi! def link cOctal       Octal
 

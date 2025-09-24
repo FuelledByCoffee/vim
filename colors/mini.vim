@@ -19,13 +19,24 @@ hi Todo       ctermfg=DarkMagenta ctermbg=None
 hi Title      ctermfg=Green
 
 " Vim UI
-hi LineNr       ctermfg=Grey  ctermbg=None
-hi CursorLineNr ctermfg=White ctermbg=None cterm=None
-hi CursorLine                 ctermbg=8    cterm=None
-hi Folded       ctermfg=Black ctermbg=DarkGrey
-hi Pmenu        ctermfg=white ctermbg=8
-hi pmenusel     ctermfg=black ctermbg=blue
-hi signcolumn                 ctermbg=None
+hi LineNr          ctermfg=Grey  ctermbg=None
+hi CursorLineNr    ctermfg=White ctermbg=None cterm=None
+hi CursorLine      ctermbg=8     cterm=None
+hi Folded          ctermfg=Black ctermbg=DarkGrey
+hi Pmenu           ctermfg=white ctermbg=8
+hi pmenusel        ctermfg=black ctermbg=blue
+hi signcolumn      ctermbg=None
+hi VimVar          ctermfg=lightblue
+hi VimFunction     ctermfg=74
+hi VimHiCtermcolor ctermfg=DarkCyan
+hi VimMapMod       ctermfg=DarkGrey
+hi VimMapModKey    ctermfg=DarkBlue
+hi VimNotation     ctermfg=DarkBlue
+hi VimBracket      ctermfg=DarkGrey
+
+hi! def link VimFtOption  Constant
+hi! def link VimOption    Constant
+hi! def link VimVar       Variable
 
 " QuickFix
 hi quickFixLine ctermbg=none

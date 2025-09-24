@@ -1,4 +1,4 @@
 
 syntax match flag ' --\?\S\+'
 
-hi! def flag ctermfg=darkcyan
+hi! def link flag Special

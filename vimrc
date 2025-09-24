@@ -53,9 +53,7 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 au FileType c,cpp,json nnoremap <leader>f <cmd>!clang-format -i %<cr><cr>
 
-syntax on
-colorscheme mini
-
+set background=dark
 set mouse=a
 set backspace=indent,eol,start
 set nowrap
@@ -99,6 +97,8 @@ set omnifunc=syntaxcomplete#Complete
 set nrformats=bin,octal,hex,unsigned " Ignore leading - when inc/dec numbers
 set t_u7=                            " Don't start in replace mode on windows under wsl
 
+syntax on
+colorscheme retrobox
 filetype on
 filetype plugin on
 filetype indent on

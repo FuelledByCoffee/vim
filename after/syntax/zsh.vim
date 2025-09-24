@@ -44,5 +44,5 @@ hi! def link zshFunction        Function
 hi! def link zshStringDelimiter String
 hi! def link zshOperator        Operator
 
-hi! def path ctermfg=darkblue
-hi! def flag ctermfg=darkcyan
+hi! def link path Directory
+hi! def link flag Question
