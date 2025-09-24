@@ -68,3 +68,4 @@ hi gitcommitDiscardedFile ctermfg=6 ctermbg=None
 
 hi! def link gitconfigVariable variable
 
+hi debugPC ctermbg=darkgray ctermfg=none cterm=none

@@ -7,8 +7,6 @@ let g:termdebug_config['variables_window_height'] = 15
 let g:termdebug_config['use_prompt'] = 0
 " let g:termdebug_config['command'] = "gdb"
 
-hi debugPC ctermbg=darkgray ctermfg=none cterm=none
-
 nnoremap <F5>      <cmd>Termdebug<cr>
 nnoremap <leader>b <cmd>Break<cr>
 
