@@ -134,8 +134,8 @@ endfun
 nnoremap <leader><space> :call TrimWhitespace()<cr>
 
 function! Is_char(match)
-	let current_char = getline('.')[col('.') - 1]
-	return a:match == current_char
+  let current_char = getline('.')[col('.') - 1]
+  return a:match == current_char
 endfunction
 
 inoremap <expr>) Is_char(')') ? "\<right>" : ")"
@@ -143,14 +143,14 @@ inoremap <expr>] Is_char(']') ? "\<right>" : "]"
 inoremap <expr>} Is_char('}') ? "\<right>" : "}"
 
 function! CompleteTab()
-	let line = getline('.')
-	let prev_char = l:line[col('.') - 2]
+  let line = getline('.')
+  let prev_char = l:line[col('.') - 2]
   let substr = strpart(l:line, -1, col('.')) " Line up until cursor
   let substr = matchstr(l:substr, "[^\s]*$") " word until cursor
 
   if col('.') == 1 || l:prev_char =~ '\s'
     return "\<Tab>"
-	elseif match(l:substr, '\/') != -1
+  elseif match(l:substr, '\/') != -1
     return "\<C-X>\<C-F>"
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
