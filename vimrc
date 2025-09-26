@@ -67,8 +67,8 @@ set cursorline
 set cursorlineopt=both
 set splitright
 set splitbelow
-set autoread       " Auto-refresh when file has changed
-set hidden         " Modify buffers not in view
+set autoread " Auto-refresh when file has changed
+set hidden   " Modify buffers not in view
 set nobackup
 set nowritebackup
 set hlsearch
@@ -92,8 +92,8 @@ set rtp+=$FZF_DIR
 set wildmenu
 set wildignorecase                   " case is ignored when completing file names and directories
 set shortmess+=c
-set completeopt=menu,menuone,noselect
-set complete+=kspell                 "add files in spell/ to dictionaries
+set completeopt=menu,menuone,popup
+set complete+=kspell                 " add files in spell/ to dictionaries
 set omnifunc=syntaxcomplete#Complete
 set nrformats=bin,octal,hex,unsigned " Ignore leading - when inc/dec numbers
 set t_u7=                            " Don't start in replace mode on windows under wsl
