@@ -64,6 +64,7 @@ set number
 set signcolumn=yes " For git signs
 set ruler          " Show line and column in status
 set cursorline
+set cursorlineopt=both
 set splitright
 set splitbelow
 set autoread       " Auto-refresh when file has changed
