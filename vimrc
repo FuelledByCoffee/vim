@@ -147,7 +147,7 @@ function! CompleteTab()
 
   if col('.') == 1 || l:prev_char =~ '\s'
     return "\<Tab>"
-  elseif match(l:prev_char, '\/') != -1 " Previous character is slash so path
+	elseif l:prev_char =~ '\/' " Previous character is slash so path
     return "\<C-X>\<C-F>"
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
