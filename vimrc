@@ -143,13 +143,11 @@ inoremap <expr>] Is_char(']') ? "\<right>" : "]"
 inoremap <expr>} Is_char('}') ? "\<right>" : "}"
 
 function! CompleteTab()
-  let line   = getline('.') " Current line
-  let substr = strpart(line, -1, col('.')) 
-  let substr = matchstr(substr, "[^\s]*$")
+	let prev_char = getline('.')[col('.') - 2]
 
-  if strlen(substr) == 0
+  if col('.') == 1 || l:prev_char =~ '\s'
     return "\<Tab>"
-  elseif match(substr, '\/') != -1 " Current string has slash, so path
+  elseif match(l:prev_char, '\/') != -1 " Previous character is slash so path
     return "\<C-X>\<C-F>"
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
