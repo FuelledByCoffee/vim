@@ -5,3 +5,5 @@ setlocal path+=$HOME/.local/include
 
 setlocal foldmethod=syntax
 setlocal foldlevel=20
+
+setlocal formatprg=clang-format

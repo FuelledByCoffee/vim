@@ -51,8 +51,6 @@ inoremap [ []<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-au FileType c,cpp,json nnoremap <leader>f <cmd>!clang-format -i %<cr><cr>
-
 set background=dark
 set mouse=a
 set backspace=indent,eol,start
