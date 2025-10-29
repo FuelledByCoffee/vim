@@ -27,6 +27,7 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 " Shortcuts
 nmap <leader>sf <cmd>Files<cr>
 nmap <leader>sb <cmd>Buffers<cr>
+nmap <leader>st <cmd>Tags<cr>
 nmap <leader>sg <cmd>Rg<cr>
 nmap <leader>sG <cmd>GFiles?<cr>
 nmap <leader>sH <cmd>Helptags<cr>
