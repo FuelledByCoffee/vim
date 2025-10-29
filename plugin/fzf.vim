@@ -20,9 +20,9 @@ xmap <leader>sk <plug>(fzf-maps-x)
 omap <leader>sk <plug>(fzf-maps-o)
 
 " Insert mode completion
-imap <c-x><c-k> <plug>(fzf-complete-word)
-imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-l> <plug>(fzf-complete-line)
+imap <c-x><c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-x><c-l> <plug>(fzf-complete-line)
 
 " Shortcuts
 nmap <leader>sf <cmd>Files<cr>
