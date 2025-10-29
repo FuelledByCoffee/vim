@@ -145,11 +145,11 @@ function! CompleteTab()
   let line = getline('.')
   let prev_char = l:line[col('.') - 2]
   let substr = strpart(l:line, -1, col('.')) " Line up until cursor
-  let substr = matchstr(l:substr, "[^\s]*$") " word until cursor
+  let substr = trim(l:substr, ' ', 1)        " Remove leading whitespace
 
   if col('.') == 1 || l:prev_char =~ '\s'
     return "\<Tab>"
-  elseif match(l:substr, '\/') != -1
+  elseif stridx(l:substr, '/') >= 0
     return "\<C-X>\<C-F>"
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
