@@ -11,7 +11,11 @@ nnoremap <leader>w <cmd>w<cr>
 nnoremap <leader>q <cmd>q<cr>
 nnoremap <leader>d <cmd>bd<cr>
 nnoremap <leader>Q <cmd>qa<cr>
-nnoremap <leader>m <cmd>make<cr>
+nnoremap <leader>mm <cmd>make!<bar>cw<cr>
+nnoremap <leader>mt <cmd>vertical terminal make test<cr>
+nnoremap <leader>mr <cmd>vertical terminal make run<cr>
+nnoremap <leader>mc <cmd>make clean<cr>
+nnoremap <leader>cc <cmd>cclose<cr>
 nnoremap <leader>T <cmd>term<cr>
 nnoremap <leader>tw <cmd>set wrap!<cr>
 
