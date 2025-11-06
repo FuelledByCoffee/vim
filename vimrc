@@ -55,6 +55,9 @@ inoremap [ []<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
+set termguicolors
+set fillchars=vert:│
+" set statusline=%F%=%m%r%h%w\ \ %{strftime('%H:%M')}\ │\ %l,%c
 set background=dark
 set mouse=a
 set backspace=indent,eol,start
