@@ -156,12 +156,19 @@ function! CompleteTab()
   let substr = strpart(l:line, -1, col('.')) " Line up until cursor
   let words = split(l:substr, '\s\+')
 
+  " If the previous character is whitespace, then don't complete, just tab.
   if col('.') == 1 || l:prev_char =~ '\s'
     return "\<Tab>"
+
+  " If last word in line until cursor contains a slash, do path completion
   elseif !empty(l:words) && stridx(l:words[-1], '/') != -1
     return "\<C-X>\<C-F>"
+
+  " If omnifunc is set, then try C-x C-o
   elseif exists('&omnifunc') && &omnifunc != ''
     return "\<C-X>\<C-O>"
+
+  " Fall back to keyword completion 
   else
     return "\<C-N>"
   endif
