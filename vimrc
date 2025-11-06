@@ -93,6 +93,7 @@ set undofile        " Save undos after file closes
 set undodir=$HOME/.undo-vim
 set rtp+=$FZF_DIR
 set wildmenu
+set wildoptions=pum,fuzzy
 set wildignorecase                   " case is ignored when completing file names and directories
 set wildmode=full
 set wildoptions=fuzzy,pum
