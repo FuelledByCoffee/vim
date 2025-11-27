@@ -6,3 +6,5 @@ setlocal tabstop=2
 setlocal softtabstop=2
 
 setlocal fo-=o
+
+inoremap / /<C-x><C-f>
