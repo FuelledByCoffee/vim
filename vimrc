@@ -97,16 +97,25 @@ set undodir=$HOME/.undo-vim
 set rtp+=$FZF_DIR
 set wildmenu
 set wildignorecase                   " case is ignored when completing file names and directories
-set wildmode=full
+set wildmode=noselect:lastused,full
 set wildoptions=fuzzy,pum
 set shortmess+=c
-set completeopt=menu,menuone,popup
+set complete+=FVimScriptFunctions
+set complete+=FLspCompletor
+set complete+=F
+set complete+=o
+set completeopt=menu,menuone,popup,noselect
 set completepopup=height:10,width:60,border:off,align:menu,highlight:PMenuSel
 set tags+=~/.vim/tags
 set complete+=kspell                 " add files in spell/ to dictionaries
 set omnifunc=syntaxcomplete#Complete
 set nrformats=bin,octal,hex,unsigned " Ignore leading - when inc/dec numbers
 set t_u7=                            " Don't start in replace mode on windows under wsl
+
+augroup cmdcomplete 
+  au!
+  autocmd CmdlineChanged : call wildtrigger()
+augroup END
 
 syntax on
 colorscheme retrobox
