@@ -162,7 +162,7 @@ inoremap <expr>} Is_char('}') ? "\<right>" : "}"
 function! CompleteTab()
   let line = getline('.')
   let prev_char = l:line[col('.') - 2]
-  let substr = strpart(l:line, -1, col('.')) " Line up until cursor
+  let substr = strpart(l:line, 0, col('.') -1) " Line up until cursor
   let words = split(l:substr, '\s\+')
 
   " If the previous character is whitespace, then don't complete, just tab.
