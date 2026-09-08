@@ -1,4 +1,4 @@
-set background=dark
+set background=light
 set notermguicolors
 
 " Syntax
@@ -20,11 +20,11 @@ hi Title      ctermfg=Green
 
 " Vim UI
 hi LineNr          ctermfg=Grey  ctermbg=None
-hi CursorLineNr    ctermfg=White ctermbg=None cterm=None
-hi CursorLine      ctermbg=8     cterm=None
-hi Folded          ctermfg=Black ctermbg=DarkGrey
-hi Pmenu           ctermfg=white ctermbg=8
-hi pmenusel        ctermfg=black ctermbg=blue
+hi CursorLineNr    ctermfg=none  ctermbg=none cterm=none
+hi CursorLine      ctermbg=white cterm=None
+hi Folded          ctermfg=white ctermbg=DarkGrey
+hi Pmenu           ctermfg=white ctermbg=black
+hi pmenusel        ctermfg=white ctermbg=black cterm=reverse
 hi signcolumn      ctermbg=None
 hi VimVar          ctermfg=lightblue
 hi VimFunction     ctermfg=74
@@ -49,11 +49,11 @@ hi Warning ctermfg=3
 hi Info    ctermfg=4
 
 " Lines between splits
-hi vertsplit        ctermfg=DarkGrey ctermbg=Black
-hi statusline       ctermfg=DarkGrey ctermbg=Black
-hi statuslinenc     ctermfg=DarkGrey ctermbg=Black
-hi statuslineterm   ctermbg=DarkGrey ctermfg=black
-hi statuslinetermnc ctermbg=DarkGrey ctermfg=black
+hi vertsplit        ctermfg=white ctermbg=none cterm=none
+" hi statusline       ctermfg=white ctermbg=Black cterm = none
+hi statuslinenc     ctermfg=white ctermbg=Black
+hi statuslineterm   ctermfg=black ctermbg=DarkGrey
+hi statuslinetermnc ctermfg=black ctermbg=DarkGrey
 
 " Git
 hi DiffAdd                ctermfg=2 ctermbg=None

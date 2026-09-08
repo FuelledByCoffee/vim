@@ -118,7 +118,7 @@ augroup cmdcomplete
 augroup END
 
 syntax on
-colorscheme retrobox
+colorscheme mini
 filetype on
 filetype plugin on
 filetype indent on
