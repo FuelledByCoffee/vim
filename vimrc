@@ -171,15 +171,10 @@ function! CompleteTab()
   " If last word in line until cursor contains a slash, do path completion
   elseif !empty(l:words) && stridx(l:words[-1], '/') != -1
     return "\<C-X>\<C-F>"
-
-  " If omnifunc is set, then try C-x C-o
-  elseif exists('&omnifunc') && &omnifunc != ''
-    return "\<C-X>\<C-O>"
-
-  " Fall back to keyword completion 
-  else
-    return "\<C-N>"
   endif
+
+  " try C-x C-o, fall back to keyword completion
+  return "\<C-X>\<C-O>\<C-R>=pumvisible() ? '' : \"\\<C-H>\\<C-N>\"\<CR>"
 endfunction
 
 inoremap <expr><Tab>   pumvisible() ? "\<C-N>" : CompleteTab()
