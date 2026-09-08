@@ -17,7 +17,7 @@ command! Gqf GitGutterQuickFix | copen
 nnoremap qg         <cmd>Gqf<cr>
 nnoremap <leader>ga <cmd>GitGutterStageHunk<cr>
 nnoremap <leader>gu <cmd>GitGutterUndoHunk<cr>
-nnoremap         gp <cmd>GitGutterPreviewHunk<cr>
+nnoremap <leader>gp <cmd>GitGutterPreviewHunk<cr>
 nnoremap <leader>gf <cmd>GitGutterFold<cr>
 nnoremap <leader>g[ <cmd>GitGutterNextHunk<cr>
 nnoremap <leader>g] <cmd>GitGutterPrevHunk<cr>
