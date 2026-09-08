@@ -7,3 +7,5 @@ setlocal foldmethod=syntax
 setlocal foldlevel=20
 
 setlocal formatprg=clang-format
+
+setlocal complete-=i
