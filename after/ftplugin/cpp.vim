@@ -1,1 +1,1 @@
-setlocal formatprg=clang-format
+c.vim
