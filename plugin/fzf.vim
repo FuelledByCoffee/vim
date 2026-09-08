@@ -7,6 +7,13 @@ command! -bang -complete=dir -nargs=? LS
 " See `man fzf-tmux` for available options
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 
+" Force FZF to use terminal transparent color index (-1) for everything
+let $FZF_DEFAULT_OPTS = '--color=bg:-1,bg+:-1,preview-bg:-1,fg+:232,bg+:248,hl+:1'
+
+" Force bat to strip out rich background styles and fit the 256-color layout
+let $FZF_PREVIEW_COMMAND = 'bat --style=numbers --color=always --theme=ansi {}'
+
+
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
