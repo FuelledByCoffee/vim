@@ -100,7 +100,6 @@ set wildignorecase                   " case is ignored when completing file name
 set wildmode=noselect:lastused,full
 set wildoptions=fuzzy,pum
 set shortmess+=c
-set complete+=FVimScriptFunctions
 set complete+=o
 set completeopt=menu,menuone,popup,noselect,fuzzy
 set completepopup=height:10,width:60,border:off,align:menu,highlight:PMenuSel
