@@ -4,7 +4,7 @@ set notermguicolors
 " Syntax
 hi Variable   ctermfg=DarkBlue
 hi Special    ctermfg=Red
-hi Comment    ctermfg=Grey
+hi Comment    ctermfg=DarkGrey
 hi Statement  ctermfg=DarkYellow
 hi Type       ctermfg=DarkYellow
 hi Function   ctermfg=Blue
@@ -21,10 +21,11 @@ hi Title      ctermfg=Green
 " Vim UI
 hi LineNr          ctermfg=Grey  ctermbg=None
 hi CursorLineNr    ctermfg=none  ctermbg=none cterm=none
-hi CursorLine      ctermbg=white cterm=None
+hi CursorLine      ctermfg=none  ctermbg=white cterm=none
 hi Folded          ctermfg=white ctermbg=DarkGrey
 hi Pmenu           ctermfg=white ctermbg=black
 hi pmenusel        ctermfg=white ctermbg=black cterm=reverse
+hi Popup           ctermbg=0
 hi signcolumn      ctermbg=None
 hi VimVar          ctermfg=lightblue
 hi VimFunction     ctermfg=74
