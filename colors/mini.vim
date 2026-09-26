@@ -53,6 +53,8 @@ hi Error   ctermfg=1 ctermbg=0 cterm=reverse
 hi Warning ctermfg=3
 hi Info    ctermfg=4
 
+hi! link ErrorMsg Error
+
 " Lines between splits
 hi vertsplit        ctermfg=white ctermbg=none cterm=none
 " hi statusline       ctermfg=white ctermbg=Black cterm = none
