@@ -49,7 +49,7 @@ hi qfFileName   ctermfg=DarkGreen
 hi qfLineNr     ctermfg=DarkBlue
 
 " Diagnostics
-hi Error   ctermfg=1
+hi Error   ctermfg=1 ctermbg=0 cterm=reverse
 hi Warning ctermfg=3
 hi Info    ctermfg=4
 
