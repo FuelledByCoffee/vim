@@ -55,7 +55,7 @@ inoremap [ []<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-set termguicolors
+set notermguicolors
 set fillchars=vert:│
 " set statusline=%F%=%m%r%h%w\ \ %{strftime('%H:%M')}\ │\ %l,%c
 set background=dark
@@ -68,7 +68,7 @@ set updatetime=100 " Decrease update time
 set number
 set signcolumn=yes " For git signs
 set ruler          " Show line and column in status
-set cursorline
+set nocursorline
 set cursorlineopt=both
 set splitright
 set splitbelow
@@ -101,7 +101,7 @@ set wildmode=noselect:lastused,full
 set wildoptions=fuzzy,pum
 set shortmess+=c
 set complete+=o
-set completeopt=menu,menuone,popup,noselect,fuzzy
+set completeopt=menu,menuone,popup,fuzzy
 set completepopup=height:10,width:60,border:off,align:menu,highlight:PMenuSel
 set tags+=~/.vim/tags
 set complete+=kspell                 " add files in spell/ to dictionaries
