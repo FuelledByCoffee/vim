@@ -34,8 +34,10 @@ hi VimMapMod       ctermfg=DarkGrey
 hi VimMapModKey    ctermfg=DarkBlue
 hi VimNotation     ctermfg=DarkBlue
 hi VimBracket      ctermfg=DarkGrey
-hi Search          ctermbg=yellow ctermfg=black cterm=none
+hi Search          ctermbg=yellow ctermfg=black  cterm=none
 hi CurSearch       ctermbg=black  ctermfg=yellow cterm=bold
+hi SpellBad        ctermbg=none   ctermfg=red    cterm=underline
+hi SpellCap        ctermbg=none   ctermfg=yellow cterm=underline
 
 hi! def link VimFtOption  Constant
 hi! def link VimOption    Constant
